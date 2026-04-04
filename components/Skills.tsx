@@ -1,18 +1,23 @@
 const skillGroups = [
   {
-    label: 'Core',
+    label: 'Mobile',
     color: '#54C5F8',
     skills: ['Flutter', 'Dart', 'Android', 'iOS', 'OOP']
   },
   {
-    label: 'State Mgmt',
+    label: 'Web',
     color: '#e63946',
-    skills: ['GetX', 'Provider', 'BLoC', 'MVC', 'MVVM', 'MVP']
+    skills: ['Next.js (v15/16)', 'TypeScript', 'Tailwind CSS', 'React']
   },
   {
-    label: 'Backend / DB',
+    label: 'State Management',
+    color: '#a78bfa',
+    skills: ['Riverpod', 'GetX', 'Provider', 'MVC', 'MVVM', 'MVP', 'Atomic Design']
+  },
+  {
+    label: 'Backend & APIs',
     color: '#ffc857',
-    skills: ['Firebase', 'REST API', 'Third-party API', 'Socket.io']
+    skills: ['Firebase', 'REST API', 'Socket.io', 'Third-Party APIs']
   },
   {
     label: 'Payments',
@@ -20,14 +25,14 @@ const skillGroups = [
     skills: ['Razorpay', 'Cashfree', 'PhonePe', 'In-App Purchase']
   },
   {
-    label: 'Media & Maps',
+    label: 'Media & Comms',
     color: '#ff9f1c',
-    skills: ['FFmpeg', 'Agora', 'Google Maps', 'Video Player', 'Push Notifications']
+    skills: ['FFmpeg', 'Agora (Voice/Video)', 'OneSignal', 'Video Player', 'Google Maps']
   },
   {
     label: 'Tools',
     color: '#a8dadc',
-    skills: ['Android Studio', 'VS Code', 'Xcode', 'Postman', 'Figma', 'Git', 'Bitbucket', 'JIRA']
+    skills: ['Git', 'Bitbucket', 'JIRA', 'Postman', 'Xcode', 'Android Studio', 'VS Code', 'Figma']
   },
 ]
 
@@ -77,13 +82,28 @@ export default function Skills() {
             <span className="text-accent text-xs tracking-widest uppercase font-medium">Education</span>
             <h3 className="font-display font-bold text-lg text-white mt-2">Master of Computer Application</h3>
             <p className="text-white/40 text-sm mt-1">Maharshi Dayanand University</p>
-            <p className="text-white/25 text-xs mt-1 font-mono">2021 – 2023 · CGPA: 6.58</p>
+            <p className="text-white/25 text-xs mt-1 font-mono">2023 · CGPA: 6.58</p>
           </div>
           <div className="bg-[#111] border border-white/7 rounded-xl p-6">
             <span className="text-[#54C5F8] text-xs tracking-widest uppercase font-medium">Education</span>
             <h3 className="font-display font-bold text-lg text-white mt-2">Bachelor of Computer Application</h3>
-            <p className="text-white/40 text-sm mt-1">Disha Institute of Technology and Management</p>
-            <p className="text-white/25 text-xs mt-1 font-mono">2016 – 2019 · 62%</p>
+            <p className="text-white/40 text-sm mt-1">Disha Institute of Science & Technology</p>
+            <p className="text-white/25 text-xs mt-1 font-mono">2019 · 62%</p>
+          </div>
+        </div>
+
+        {/* Languages */}
+        <div className="mt-6 bg-[#111] border border-white/7 rounded-xl p-6">
+          <span className="text-white/40 text-xs tracking-widest uppercase font-medium">Languages</span>
+          <div className="flex gap-6 mt-3">
+            <div>
+              <span className="text-white font-medium text-sm">Hindi</span>
+              <span className="text-white/30 text-xs ml-2">Native</span>
+            </div>
+            <div>
+              <span className="text-white font-medium text-sm">English</span>
+              <span className="text-white/30 text-xs ml-2">Moderate</span>
+            </div>
           </div>
         </div>
       </div>

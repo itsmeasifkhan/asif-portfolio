@@ -1,7 +1,7 @@
 'use client'
 import { useEffect, useState } from 'react'
 
-const roles = ['Flutter Developer', 'Mobile App Engineer', 'UI/UX Enthusiast', 'Dart Expert']
+const roles = ['Flutter Developer', 'Mobile App Engineer', 'Next.js Developer', 'Dart Expert', 'Full-Stack Engineer']
 
 export default function Hero() {
   const [roleIdx, setRoleIdx] = useState(0)
@@ -62,7 +62,7 @@ export default function Hero() {
             </div>
 
             <p className="text-white/40 text-base md:text-lg leading-relaxed mt-4 mb-8 max-w-md animate-fadeUp-delay-3">
-              Passionate about refining complex UIs, turning ideas into Flutter designs, and creating seamless mobile interactions. 3+ years building apps loved by users.
+              Flutter Developer with 4+ years of experience shipping 10+ apps across e-commerce, healthcare, social, and media. Expanded into Next.js web development in 2025, bringing full-stack capability to mobile-first teams.
             </p>
 
             <div className="flex flex-wrap gap-4 animate-fadeUp-delay-4">
@@ -83,9 +83,9 @@ export default function Hero() {
             {/* Stats */}
             <div className="flex gap-10 mt-14 animate-fadeUp-delay-4">
               {[
-                { val: '3+', label: 'Years Experience' },
+                { val: '4+', label: 'Years Experience' },
                 { val: '15+', label: 'Apps Shipped' },
-                { val: '2', label: 'Companies' },
+                { val: '3', label: 'Companies' },
               ].map(s => (
                 <div key={s.label}>
                   <div className="font-display font-extrabold text-3xl text-accent">{s.val}</div>
@@ -122,7 +122,7 @@ export default function Hero() {
                 Firebase 🔥
               </div>
               <div className="absolute top-1/2 -right-10 bg-accent/10 border border-accent/20 rounded-lg px-3 py-1.5 text-xs font-medium text-accent shadow-xl">
-                GetX ✓
+                Next.js ✓
               </div>
             </div>
           </div>

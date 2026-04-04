@@ -1,5 +1,12 @@
 const projects = [
   {
+    name: 'Misto (Customer)',
+    type: 'E-commerce App',
+    desc: 'Full-stack e-commerce app built with Riverpod & Atomic Design. CMS-driven UI with real-time storefront customization — no app update required.',
+    tags: ['Flutter', 'Next.js', 'Riverpod', 'TypeScript'],
+    featured: true,
+  },
+  {
     name: 'Vibes Melody',
     type: 'Social Dating App',
     desc: 'A social dating app enabling users to connect through chat, voice & video calls, with reels video sharing for enhanced discovery.',
@@ -8,21 +15,20 @@ const projects = [
     featured: true,
   },
   {
-    name: 'Hunttr',
-    type: 'Dating App',
-    desc: 'Connects nearby users for chatting and interaction. Built with GetX and Firebase for real-time communication.',
-    tags: ['Flutter', 'Socket.io', 'Firebase', 'GetX'],
-    playStore: 'https://play.google.com/store/apps/details?id=com.hunterr',
-    featured: true,
-  },
-  {
     name: '3RoodQ8',
     type: 'E-commerce App',
-    desc: 'Kuwait-based bilingual (Arabic/English) electronics e-commerce store with seamless shopping experience.',
+    desc: 'Kuwait-based bilingual (Arabic/English) electronics e-commerce store with seamless shopping experience, live on both stores.',
     tags: ['Flutter', 'Dart', 'REST API', 'GetX'],
     playStore: 'https://play.google.com/store/apps/details?id=com.creativity.threerood',
     appStore: 'https://apps.apple.com/in/app/3roodq8-online-shopping-app/id1443063291',
     featured: true,
+  },
+  {
+    name: 'Hunttr',
+    type: 'Dating App',
+    desc: 'Connects nearby users for chatting and interaction. 4.5+ star rating within 3 months of launch.',
+    tags: ['Flutter', 'Socket.io', 'Firebase', 'GetX'],
+    playStore: 'https://play.google.com/store/apps/details?id=com.hunterr',
   },
   {
     name: 'Rishtaywala',
@@ -34,16 +40,22 @@ const projects = [
   {
     name: 'NB Star',
     type: 'Video Editing App',
-    desc: 'News editing app that enhances videos by adding animations to audio, images, and media using FFmpeg.',
+    desc: 'News editing app that automates animation overlays on media assets using FFmpeg, reducing manual editing effort.',
     tags: ['Flutter', 'FFmpeg', 'Video Player'],
     playStore: 'https://play.google.com/store/apps/details?id=org.ourukd',
   },
   {
     name: 'Iman Ki Baten',
     type: 'Education App',
-    desc: 'Islamic studies app with comprehensive video courses. Efficient navigation using GetX.',
+    desc: 'Islamic studies app with comprehensive video courses across 5+ modules. Efficient navigation using GetX.',
     tags: ['Flutter', 'GetX', 'Video'],
     playStore: 'https://play.google.com/store/apps/details?id=com.mariox.imaan_ki_baatein',
+  },
+  {
+    name: 'store.misto.life',
+    type: 'Web Portal',
+    desc: 'Seller web portal built independently from scratch with Next.js, TypeScript & Tailwind CSS. First web project, delivered on schedule.',
+    tags: ['Next.js', 'TypeScript', 'Tailwind CSS'],
   },
 ]
 
@@ -108,7 +120,7 @@ export default function Projects() {
         {/* Other projects */}
         <div>
           <h3 className="font-display font-semibold text-white/50 text-sm tracking-widest uppercase mb-6">Other Notable Apps</h3>
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+          <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-4">
             {rest.map((p, i) => (
               <div key={i} className="card-hover bg-[#0e0e0e] border border-white/5 rounded-xl p-5 group">
                 <div className="flex items-center justify-between mb-3">

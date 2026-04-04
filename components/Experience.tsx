@@ -1,15 +1,27 @@
 export default function Experience() {
   const jobs = [
     {
-      company: 'Mariox Software',
+      company: 'Haabtek Labs Pvt. Ltd.',
       role: 'Flutter Developer',
-      period: 'Feb 2024 – Present',
+      period: 'Dec 2024 – Present',
       color: '#e63946',
       projects: [
-        { name: 'Vibes Melody', type: 'Social Dating App', desc: 'Real-time chat, voice & video calls, reels integration.' },
-        { name: 'NB Star', type: 'Video Editing App', desc: 'FFmpeg-powered news editing with animations on audio/images.' },
-        { name: 'Iman Ki Baten', type: 'Education App', desc: 'Islamic video courses with GetX state management.' },
-        { name: 'Uttrakhand Kranti Dal', type: 'Politics News', desc: 'Blogs, videos, and political news delivery app.' },
+        { name: 'Misto (Customer)', type: 'E-commerce App', desc: 'Full-stack Flutter app with Riverpod & Atomic Design — scalable, modular, and production-ready.' },
+        { name: 'Misto Business', type: 'Seller App', desc: 'Seller-facing e-commerce app with CMS-driven UI and real-time storefront customization.' },
+        { name: 'store.misto.life', type: 'Seller Web Portal', desc: 'Built independently from scratch using Next.js, TypeScript, and Tailwind CSS — first web project, delivered on schedule.' },
+        { name: 'Server-Driven Theming', type: 'CMS System', desc: 'Runtime theming system enabling sellers to customize website design via app with real-time updates — no redeployment needed.' },
+      ]
+    },
+    {
+      company: 'Mariox Software',
+      role: 'Flutter Developer',
+      period: 'Feb 2024 – Aug 2024',
+      color: '#a78bfa',
+      projects: [
+        { name: 'Vibes Melody', type: 'Social Dating App', desc: 'Real-time chat, voice & video calls via Agora SDK, and reels integration.' },
+        { name: 'NB Star', type: 'Video Editing App', desc: 'FFmpeg-powered news editing with animated overlays on media assets.' },
+        { name: 'Iman Ki Baten', type: 'Education App', desc: 'Islamic video courses with GetX state management across 5+ modules.' },
+        { name: 'Uttarakhand Kranti Dal', type: 'Politics News', desc: 'Blogs, videos, and political news delivery app with an intuitive UI.' },
       ]
     },
     {
@@ -18,9 +30,10 @@ export default function Experience() {
       period: 'Mar 2022 – Feb 2024',
       color: '#54C5F8',
       projects: [
-        { name: 'Hunttr', type: 'Dating App', desc: 'Nearby user discovery, real-time chat via Socket.io & Firebase.' },
-        { name: 'Rishtaywala', type: 'Matrimonial App', desc: 'User connections, Firebase chat, location-based discovery.' },
-        { name: '3RoodQ8', type: 'E-commerce App', desc: 'Bilingual (Arabic/English) electronics store for Kuwait users.' },
+        { name: 'Hunttr', type: 'Dating App', desc: 'Nearby user discovery, real-time chat via Socket.io & Firebase. 4.5+ star rating within 3 months.' },
+        { name: 'Rishtaywala', type: 'Matrimonial App', desc: 'User connections, Firebase chat, location-based discovery. Live on Play Store & App Store.' },
+        { name: '3RoodQ8', type: 'E-commerce App', desc: 'Bilingual (Arabic/English) electronics store for Kuwait market, live on both stores.' },
+        { name: 'Healthcare & More', type: '6+ Projects', desc: 'Docazy (User & Doctor), JustTakeIt, Sanx, School App, Guard App, QNR across 4 domains.' },
       ]
     }
   ]
@@ -45,7 +58,7 @@ export default function Experience() {
                 <div className="sticky top-24">
                   <div className="inline-block px-3 py-1 text-xs font-medium tracking-wider uppercase mb-3"
                     style={{ color: job.color, backgroundColor: `${job.color}15`, border: `1px solid ${job.color}30` }}>
-                    {ji === 0 ? 'Current' : 'Previous'}
+                    {ji === 0 ? 'Current' : ji === 1 ? 'Previous' : 'Earlier'}
                   </div>
                   <h3 className="font-display font-bold text-2xl text-white mb-1">{job.company}</h3>
                   <p className="text-white/40 text-sm">{job.role}</p>

@@ -34,3 +34,5 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+git remote set-url origin https://github.com/itsmeasifkhan/asif-portfolio.git
+git push
